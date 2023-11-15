@@ -1,0 +1,32 @@
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.buttons .buttons_item{
+    text-align: center;
+    border: 2px solid #FFE145;
+    padding: 16px 24px ;
+    border-radius: 5%;
+    color: #3F4255;
+    cursor: pointer;
+    transition: 1s;
+}
+.buttons .buttons_item:hover{
+   background-color: #FFF7CC; 
+}
+.buttons_item h2{
+    font-size: 18px;
+}
+.buttons_item span{
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:600px) {
+    .buttons{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}

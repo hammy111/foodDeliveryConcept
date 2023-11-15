@@ -1,0 +1,117 @@
+footer {
+  width: 100%;
+  background-color: #3f4255;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+footer .footer_contanier {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .footer_contanier .logos {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .footer_contanier .logos img {
+  width: 200px;
+  object-fit: cover;
+}
+footer .footer_contanier hr {
+  border: 1px solid #f2efef;
+  width: 300px;
+}
+footer .footer_contanier .img_item {
+  display: flex;
+  gap: 5px;
+}
+footer .footer_contanier .img_item img {
+  width: 86px;
+  height: 27px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .footer_contanier .footer_elements {
+  display: flex;
+  gap: 70px;
+  align-items: flex-start;
+}
+footer .footer_contanier .footer_elements .footer_element p {
+  color: #d4d7e5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+}
+footer .footer_contanier .footer_elements .footer_element p:first-child {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.finish {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 27px;
+}
+.finish .info {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+footer .info p {
+  font-size: 12px;
+}
+
+.footer_element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons {
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer_contanier {
+    flex-direction: column-reverse;
+    /* align-items: center; */
+    gap: 3rem;
+  }
+  .footer_elements {
+    width: 100%;
+  }
+  .footer_element {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .finish {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer_elements{
+    flex-direction: column;
+    gap: 3rem !important;
+  }
+
+  .finish .info {
+    align-items: flex-start;
+  }
+}
+
+

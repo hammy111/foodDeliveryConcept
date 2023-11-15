@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.5s;
+  list-style-type: none;
+}
+
+p,
+button {
+  font-family: "Martel Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.header_container {
+  width: 100%;
+  height: 70px;
+  padding: 0 5%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+  /* border-bottom: 2px solid #797979; */
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.08);
+}
+
+.header_menu_container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.burger_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #9093a6;
+  font-size: 24px;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+  transition: 0.5s all ease;
+}
+
+.login_container,
+.shop_container  {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9093a6;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.login_container:hover,
+.shop_container :hover,
+.burger_container:hover {
+  color: black;
+}
+
+.burger_menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 55;
+  background: #797979;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.burger {
+  width: 300px;
+  height: calc(100% - 70px);
+  background: #ffffff;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.burger_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f2f4fa;
+  padding-left: 20px;
+  gap: 1rem;
+}
+
+.burger_contact_types {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #000;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.burger_contact_types svg {
+  color: #d4d7e5;
+  font-size: 24px;
+}
+.burger_contact > p {
+  color: #9093a6;
+  font-size: 16px;
+}
+
+.burger_elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+.burger_elements p {
+  padding-left: 20px;
+}
+
+.burger_every_element {
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 2px solid #f2f4fa;
+}
+
+.language_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.language_container select {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 110px;
+  cursor: pointer;
+  color: #9093a6;
+  transition: all 1s ease-in;
+}
+
+
+.language_container select:hover{
+    border-color: #888;
+}
+.language_container select:focus{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.language_container select option:checked{
+    background-color: #ddd;
+}
+.language_container select option:hover{
+    background-color: #ccc;
+}
+
+.login{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: flex-end;
+  padding: 20px;
+  opacity: 0;
+}
+
+
+@media screen and (max-width:600px) {
+  .login{
+    opacity: 1;
+  }
+  .def_blocs{
+    opacity: 0;
+  }
+  .burger{
+    width: 100%;
+    padding: 10% 2%;
+  }
+  header>img{
+    width: 30%;
+  }
+  .burger_container{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 20px;
+  }
+  .login{
+    margin-top: 80px;
+  }
+}

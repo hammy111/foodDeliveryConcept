@@ -1,0 +1,124 @@
+.limons_container {
+  width: 100%;
+  height: 300px;
+  background: url(../../img/bg.png) no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.limons_circles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  transform: translateY(40px);
+}
+.limon_1 {
+  align-self: flex-start;
+  transform: translateY(-20px);
+}
+
+.limons_circles > p {
+  color: #3f4255;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.circle {
+  background: #ffe145;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle::before {
+  content: "";
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  border: 1px solid black;
+  top: -22px;
+}
+
+.circle p {
+  color: #3f4255;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 2.9px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .circle,
+  .circle::before {
+    width: 75px;
+    height: 75px;
+  }
+  .circle::before {
+    top: -15px;
+  }
+  .circle p {
+    font-size: 30px;
+  }
+  .limons_container{
+    background-position: top left;
+  }
+  .limon_1 {
+    align-self: flex-start;
+    transform: translateY(20px);
+  }
+  .limons_circles > p {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width : 600px) {
+  .limons_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0;
+    place-items: center;
+    padding: 20px;
+  }
+  .limon_1 {
+    transform: translate(0);
+    align-self: center;
+  }
+  .circle,
+  .circle::before {
+    width: 55px;
+    height: 55px;
+  }
+  .circle::before {
+    top: -15px;
+  }
+  .circle p {
+    font-size: 16px;
+  }
+  .limons_circles > p {
+    font-size: 14px;
+  }
+
+}

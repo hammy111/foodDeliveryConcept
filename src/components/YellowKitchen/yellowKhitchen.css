@@ -1,0 +1,38 @@
+.khitchen {
+  width: 100%;
+  min-height: 40vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 5%;
+}
+.khitchen .title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 2% 0;
+}
+.khitchen .title h2,
+h3 {
+  font-size: 34px;
+  font-weight: 300;
+}
+.khitchen .title h2 {
+  color: #313030;
+}
+.khitchen .title h3 {
+  color: #9093a6;
+}
+.khitchen .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .khitchen .title {
+    flex-direction: column;
+  }
+}

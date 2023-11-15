@@ -1,0 +1,89 @@
+.nearest {
+  width: 100%;
+  padding: 5% 10%;
+  background-color: #f2f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 42%;
+}
+.nearest .text h2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #3f4255;
+}
+.nearest .text p {
+  font-size: 16px;
+  color: #3f4255;
+}
+.nearest form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.nearest form svg {
+  position: absolute;
+  left: 10px;
+  top: 48%;
+  transform: translateY(-52%);
+  font-size: 26px;
+  color: #9093a6;
+}
+.nearest form .address {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #9093a6;
+  box-shadow: 0px 8px 40px 0px #00000014;
+  padding: 30px 100px 30px 37px;
+}
+.nearest form .address::placeholder {
+  font-size: 16px;
+  color: #9093a6;
+}
+
+.nearest form label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nearest form .send {
+  background-color: #ffe145;
+  color: #b79c10;
+  padding: 30px 24px;
+  border-radius: 5px;
+  transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  .nearest {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  .text {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nearest form .address {
+    padding: 15px 30px 15px 25px;
+  }  
+  .nearest form svg {
+  left:-1px;
+  }
+  .nearest form .send{
+    padding: 15px 20px;
+  }
+}
